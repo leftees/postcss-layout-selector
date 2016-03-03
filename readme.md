@@ -8,13 +8,12 @@
 
 ```css
 header {
-    @layout landscape{
-      height: 75px;
-    }
+  @layout landscape {
+    height: 75px;
+  }
 
-    @layout portrait{
-      height: 150px;
-    }
+  @layout portrait {
+    height: 150px;
   }
 }
 ```
@@ -40,7 +39,7 @@ header {
 
 ```js
 postcss([
-  require("postcss-layout-selector") ({
+  require("postcss-layout-selector")({
     layout: "portrait"
   })
 ])
