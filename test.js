@@ -13,13 +13,13 @@ function run(t, input, output, opts = { }) {
 }
 
 test("Accepting matching layout", t => {
-  return run(t, "@layout landscape{color: red}", "color: red", {
+  return run(t, "@layout landscape{ color: red }", "color: red", {
     layout: "landscape"
   })
 })
 
 test("Removing non-matching layout", t => {
-  return run(t, "@layout portrait{color: blue}", "", {
-    layout: "landscape"
+  return run(t, "@layout landscape{ color: blue }", "", {
+    layout: "portrait"
   })
 })
