@@ -25,9 +25,6 @@ export default postcss.plugin("postcss-layout-selector", function layoutSystem(p
 
     if (name === currentLayout)
     {
-      var parent = origin.parent
-      var children = origin.nodes
-
       origin.replaceWith(origin.nodes)
     }
     else
