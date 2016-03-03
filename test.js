@@ -2,7 +2,7 @@ import test from "ava"
 import "babel-register"
 
 import postcss from "postcss"
-import plugin from "./"
+import plugin from "./src"
 
 function run(t, input, output, opts = { }) {
   return postcss([ plugin(opts) ]).process(input)
