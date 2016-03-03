@@ -13,7 +13,7 @@ function nodesToOptions(rule)
   return options
 }
 
-export default postcss.plugin("postcss-layout-selector", function layoutSystem(pluginOptions)
+export default postcss.plugin("postcss-layout-selector", function(pluginOptions)
 {
   pluginOptions = pluginOptions || {}
 
