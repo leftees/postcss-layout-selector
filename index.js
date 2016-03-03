@@ -1,38 +1,38 @@
-import postcss from "postcss";
+import postcss from "postcss"
 
 function nodesToOptions(rule)
 {
-  var options = {};
+  var options = {}
   if (rule.nodes)
   {
     rule.nodes.forEach(function(child) {
-      options[child.prop] = child.value;
-    });
+      options[child.prop] = child.value
+    })
   }
 
-  return options;
+  return options
 }
 
 export default postcss.plugin("postcss-layout-selector", function layoutSystem(pluginOptions)
 {
-  pluginOptions = pluginOptions || {};
+  pluginOptions = pluginOptions || {}
 
-  var currentLayout = pluginOptions.layout;
+  var currentLayout = pluginOptions.layout
 
   function convert(origin, name, options)
   {
-    options = options || {};
+    options = options || {}
 
     if (name === currentLayout)
     {
-      var parent = origin.parent;
-      var children = origin.nodes;
+      var parent = origin.parent
+      var children = origin.nodes
 
-      origin.replaceWith(origin.nodes);
+      origin.replaceWith(origin.nodes)
     }
     else
     {
-      origin.remove();
+      origin.remove()
     }
   }
 
@@ -40,10 +40,10 @@ export default postcss.plugin("postcss-layout-selector", function layoutSystem(p
   {
     css.walkAtRules("layout", function(rule)
     {
-      var params = postcss.list.space(rule.params);
-      var options = nodesToOptions(rule);
+      var params = postcss.list.space(rule.params)
+      var options = nodesToOptions(rule)
 
-      convert(rule, params[0], options);
-    });
-  };
-});
+      convert(rule, params[0], options)
+    })
+  }
+})
