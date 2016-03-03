@@ -7,21 +7,43 @@
 [ci]:      https://travis-ci.org/swernerx/postcss-layout-selector
 
 ```css
-.foo {
-    /* Input example */
+header {
+    @layout landscape{
+      height: 75px;
+    }
+
+    @layout portrait{
+      height: 150px;
+    }
+  }
 }
 ```
 
+Generating "landscape" version:
+
 ```css
-.foo {
-  /* Output example */
+header {
+  height: 75px;
 }
 ```
+
+Generating "portrait" version:
+
+```css
+header {
+  height: 150px;
+}
+```
+
 
 ## Usage
 
 ```js
-postcss([ require('postcss-layout-selector') ])
+postcss([
+  require("postcss-layout-selector") ({
+    layout: "portrait"
+  })
+])
 ```
 
 See [PostCSS] docs for examples for your environment.
