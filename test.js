@@ -1,6 +1,7 @@
-import postcss from "postcss"
 import test from "ava"
+import "babel-register"
 
+import postcss from "postcss"
 import plugin from "./"
 
 function run(t, input, output, opts = { }) {

@@ -28,7 +28,12 @@
   "scripts": {
     "test": "ava && eslint *.js"
   },
-  "eslintConfig": {
-    "extends": "eslint-config-postcss/es5"
+  "ava": {
+    "files": [
+      "test.js"
+    ],
+    "require": [
+      "babel-register"
+    ]
   }
 }
