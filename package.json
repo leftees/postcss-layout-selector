@@ -11,7 +11,7 @@
     "mediaquery"
   ],
   "author": "Sebastian Werner <s.werner@sebastian-software.de>",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "repository": "sebastian-software/postcss-layout-selector",
   "bugs": {
     "url": "https://github.com/sebastian-software/postcss-layout-selector/issues"

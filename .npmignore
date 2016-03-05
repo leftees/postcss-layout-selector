@@ -1,13 +1,12 @@
 .gitignore
+.travis.yml
+.eslintrc.json
+.babelrc
+.editorconfig
+.codeclimate.yml
 
 node_modules/
 npm-debug.log
 
 test.js
-
-.travis.yml
-.eslintrc.json
-.babelrc
-.editorconfig
-
 src
