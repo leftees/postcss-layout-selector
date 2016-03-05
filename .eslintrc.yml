@@ -6,6 +6,7 @@ extends: 'eslint:recommended'
 parserOptions:
   sourceType: module
 rules:
+  # Style
   indent:
     - error
     - 2
@@ -18,3 +19,26 @@ rules:
   semi:
     - error
     - never
+
+  # Possible Errors
+  no-extra-parens:
+    - off
+
+  # Best Pracises
+  array-callback-return:
+    - warn
+  block-scoped-var:
+    - off
+  complexity:
+    - error
+    - 5
+  consistent-return:
+    - error
+  curly:
+    - warn
+    - multi-line
+  dot-location:
+    - error
+    - object
+
+
