@@ -85,7 +85,6 @@ rules:
   no-eq-null:
     - off
 
-
   no-eval:
     - error
   no-extend-native:
@@ -118,3 +117,45 @@ rules:
     - error
   no-loop-func:
     - error
+
+  # Good style
+  no-magic-numbers:
+    - error
+
+  # Useless formatting with high maintenance
+  no-multi-spaces:
+    - error
+
+  no-multi-str:
+    - error
+  no-native-reassign:
+    - error
+  no-new-func:
+    - error
+  no-new-wrappers:
+    - error
+  no-octal:
+    - error
+  no-octal-escape:
+    - error
+
+  # Prevent side effects...
+  no-param-reassign:
+    - error
+
+  # For maintainability of NodeJS code
+  no-process-env:
+    - error
+
+  # Deprecated feature
+  no-proto:
+    - error
+
+  # Disabled. Therefor they are variables, right?
+  no-redeclare:
+    - off
+
+  # Readability wins
+  no-return-assign:
+    - error
+
