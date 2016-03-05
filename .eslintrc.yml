@@ -29,16 +29,34 @@ rules:
     - warn
   block-scoped-var:
     - off
+
+  # Keep this down. The default of 20 is far to high in my opinion.
   complexity:
     - error
     - 5
   consistent-return:
     - error
+
+  # New for me: allow curly-free one liners. This might help with my tendency to write
+  # more compact braces in Altman style which does not actually worked well together.
   curly:
     - warn
     - multi-line
   dot-location:
     - error
     - object
+  dot-notation:
+    - error
+    - allowKeywords: false
 
+  # Smart option allows simple equal for null-comparison which is good
+  eqeqeq:
+    - error
+    - smart
+  no-alert:
+    - error
+
+  # was mainly relevant while people extended Object.prototype.xxx
+  guard-for-in:
+    - off
 
