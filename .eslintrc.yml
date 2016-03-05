@@ -159,3 +159,52 @@ rules:
   no-return-assign:
     - error
 
+  no-script-url:
+    - error
+  no-self-assign:
+    - error
+  no-self-compare:
+    - error
+
+  # Omit magic syntax... Readability for all wins
+  no-sequences:
+    - error
+
+  # Good idea to keep some more error info:
+  # "The fundamental benefit of Error objects is that they automatically keep track of where they were built and originated."
+  no-throw-literal:
+    - error
+
+  no-unmodified-loop-condition:
+    - error
+  no-unused-expressions:
+    - error
+  no-useless-call:
+    - error
+  no-useless-concat:
+    - error
+  no-void:
+    - error
+  no-with:
+    - error
+
+  # Mainly for securing code compatibility
+  radix:
+    - error
+    - always
+
+  # Does not improve maintainability in my opinion... instead makes
+  # unused variables harder to track over time
+  vars-on-top:
+    - off
+
+  # Prefer inside for readability
+  wrap-iife:
+    - error
+    - inside
+
+  # Actually interesting that this ugliness should be even something to consider
+  yoda:
+    - error
+    - never
+
