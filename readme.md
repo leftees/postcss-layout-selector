@@ -1,7 +1,4 @@
-# PostCSS Layout Selector [![Build Status][ci-img]][ci]
-
-![Dependencies][dep-img]
-
+# PostCSS Layout Selector [![Build Status][ci-img]][ci] ![Dependencies][dep-img]
 
 [PostCSS] plugin for easy handling of different layouts without media queries but with conditional compilation.
 
