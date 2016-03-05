@@ -10,7 +10,10 @@ parserOptions:
   sourceType: module
 
 rules:
-  # Style
+  #################################################################
+  # Basic Config
+  #################################################################
+
   indent:
     - error
     - 2
@@ -23,12 +26,15 @@ rules:
   semi:
     - error
     - never
-
-  # Possible Errors
   no-extra-parens:
     - off
 
-  # Best Pracises
+
+
+  #################################################################
+  # Best Practices
+  #################################################################
+
   array-callback-return:
     - warn
   block-scoped-var:
@@ -208,3 +214,35 @@ rules:
     - error
     - never
 
+
+  #################################################################
+  # Other
+  #################################################################
+
+  # Enforce strict mode globally which also happens during bundling
+  strict:
+    - error
+    - global
+
+  no-catch-shadow:
+    - error
+
+  # For better maintainability
+  no-shadow:
+    - error
+
+  # Cleaner code
+  no-shadow-restricted-names:
+    - error
+
+  # Stupid idea which needs to be prevented
+  no-undef-init:
+    - error
+
+  # I sometimes like using it to differentiate between null and undefined
+  no-undefined:
+    - off
+
+  # Keeping code clean
+  no-unused-vars:
+    - error
