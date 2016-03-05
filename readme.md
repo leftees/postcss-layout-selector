@@ -1,4 +1,4 @@
-# PostCSS Layout Selector [![Build Status][ci-img]][ci] ![Dependencies][deps-img] ![Downloads][npm-download-img] [![Code Climate][climate-img]][climate]
+# PostCSS Layout Selector <br/>[![Build Status][ci-img]][ci] ![Dependencies][deps-img] ![Downloads][npm-download-img] [![Code Climate][climate-img]][climate]
 
 [PostCSS] plugin for easy handling of different layouts without media queries but with conditional compilation.
 
@@ -54,3 +54,9 @@ postcss([
 ```
 
 See [PostCSS] docs for examples for your environment.
+
+
+## Copyright
+
+2015-2016 [Sebastian Software GmbH](http://www.sebastian-software.de)
+
