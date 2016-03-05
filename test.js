@@ -1,3 +1,5 @@
+/* eslint no-magic-numbers: 0 */
+
 import test from "ava"
 import "babel-register"
 
