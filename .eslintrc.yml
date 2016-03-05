@@ -90,3 +90,31 @@ rules:
     - error
   no-extend-native:
     - error
+  no-fallthrough:
+    - error
+  no-floating-decimal:
+    - error
+
+  # I like some of these, but numbers are to awkward for me.
+  no-implicit-coercion:
+    - error
+    - boolean: true
+      string: true
+      number: false
+
+  # Does not make sense with ES6 modules
+  no-implicit-globals:
+    - off
+
+  no-implied-eval:
+    - error
+  no-invalid-this:
+    - error
+  no-iterator:
+    - error
+  no-labels:
+    - error
+  no-lone-blocks:
+    - error
+  no-loop-func:
+    - error
