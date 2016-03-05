@@ -243,6 +243,53 @@ rules:
   no-undefined:
     - off
 
-  # Keeping code clean
   no-unused-vars:
     - error
+  no-use-before-define:
+    - error
+
+
+
+  #################################################################
+  # Stylistic
+  #################################################################
+
+  array-bracket-spacing:
+    - warn
+    - always
+
+  block-spacing:
+    - warn
+    - always
+
+  # Keeping starting and end symbol on one visible column
+  brace-style:
+    - error
+    - allman
+    - allowSingleLine: true
+
+  camelcase:
+    - error
+
+  comma-spacing:
+    - error
+    - before: false
+      after: true
+
+  comma-style:
+    - error
+    - last
+
+  computed-property-spacing:
+    - warn
+    - never
+
+  consistent-this:
+    - error
+    - self
+
+  eol-last:
+    - error
+
+
+
