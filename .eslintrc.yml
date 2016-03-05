@@ -262,7 +262,7 @@ rules:
     - warn
     - always
 
-  # Keeping starting and end symbol on one visible column
+  # Keeping starting and ending brace symbol on one visible column
   brace-style:
     - error
     - allman
@@ -291,5 +291,17 @@ rules:
   eol-last:
     - error
 
+  # Useful for debugging in older browsers
+  func-names:
+    - error
 
+  # Prefering declaration
+  func-style:
+    - error
+    - declaration
 
+  id-length:
+    - error
+    - min: 3
+      max: 20
+      exceptions: ["i", "j", "l"]
