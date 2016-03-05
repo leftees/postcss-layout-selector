@@ -2,9 +2,13 @@ env:
   browser: true
   es6: true
   node: true
-extends: 'eslint:recommended'
+
+extends:
+  "eslint:recommended"
+
 parserOptions:
   sourceType: module
+
 rules:
   # Style
   indent:
@@ -56,7 +60,33 @@ rules:
   no-alert:
     - error
 
-  # was mainly relevant while people extended Object.prototype.xxx
+  # Was mainly relevant while people extended Object.prototype.xxx
   guard-for-in:
     - off
 
+  # Match ES5 strict
+  no-caller:
+    - error
+
+  # Hard to read code must be forbidden
+  no-div-regex:
+    - error
+
+  # Makes codes easier to read
+  no-else-return:
+    - error
+
+  no-empty-function:
+    - error
+  no-empty-pattern:
+    - error
+
+  # This is just stupid
+  no-eq-null:
+    - off
+
+
+  no-eval:
+    - error
+  no-extend-native:
+    - error
