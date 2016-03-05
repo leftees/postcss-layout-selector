@@ -29,7 +29,7 @@
   },
   "scripts": {
     "test": "ava && eslint *.js",
-    "prepublish": "babel -d lib/ src/index.js",
+    "prepublish": "babel -d ./lib/ ./src/index.js",
     "release": "release-it --github.release --npm.publish"
   },
   "ava": {
