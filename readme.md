@@ -1,4 +1,4 @@
-# PostCSS Layout Selector [![Build Status][ci-img]][ci] ![Dependencies][dep-img]
+# PostCSS Layout Selector [![Build Status][ci-img]][ci] ![Dependencies][dep-img] [![Code Climate][climate-img]][climate]
 
 [PostCSS] plugin for easy handling of different layouts without media queries but with conditional compilation.
 
@@ -6,6 +6,8 @@
 [ci-img]:  https://travis-ci.org/sebastian-software/postcss-layout-selector.svg
 [ci]:      https://travis-ci.org/sebastian-software/postcss-layout-selector
 [dep-img]: https://david-dm.org/sebastian-software/postcss-layout-selector.svg
+[climate-img]: https://codeclimate.com/github/sebastian-software/postcss-layout-selector/badges/gpa.svg
+[climate]: https://codeclimate.com/github/sebastian-software/postcss-layout-selector
 
 ```css
 header {
