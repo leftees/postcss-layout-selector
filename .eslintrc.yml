@@ -299,9 +299,9 @@ rules:
   eol-last:
     - error
 
-  # Useful for debugging in older browsers
+  # Useful for debugging in older browsers, but a lot of work to manually add everywhere
   func-names:
-    - error
+    - off
 
   # Prefering declaration
   func-style:
