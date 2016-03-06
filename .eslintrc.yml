@@ -37,7 +37,7 @@ rules:
   #################################################################
 
   array-callback-return:
-    - warn
+    - error
   block-scoped-var:
     - off
 
@@ -51,7 +51,7 @@ rules:
   # New for me: allow curly-free one liners. This might help with my tendency to write
   # more compact braces in Altman style which does not actually worked well together.
   curly:
-    - warn
+    - error
     - multi-line
   dot-location:
     - error
@@ -256,11 +256,11 @@ rules:
   #################################################################
 
   array-bracket-spacing:
-    - warn
+    - error
     - always
 
   block-spacing:
-    - warn
+    - error
     - always
 
   # Keeping starting and ending brace symbol on one visible column
@@ -282,7 +282,7 @@ rules:
     - last
 
   computed-property-spacing:
-    - warn
+    - error
     - never
 
   consistent-this:
@@ -317,7 +317,7 @@ rules:
     - error
 
   lines-around-comment:
-    - warn
+    - error
     - beforeBlockComment: true
       afterBlockComment: false
       beforeLineComment: true
@@ -330,11 +330,11 @@ rules:
       allowArrayEnd: false
 
   max-depth:
-    - warn
+    - error
     - maximum: 3
 
   max-len:
-    - warn
+    - error
     - code: 140
       comments: 160
       ignoreUrls: true
@@ -352,3 +352,87 @@ rules:
     - error
     - 10
     - ignoreTopLevelFunctions: true
+
+  new-cap:
+    - error
+
+  new-parens:
+    - error
+
+  # Increase readability
+  newline-after-var:
+    - error
+  newline-before-return:
+    - error
+  newline-per-chained-call:
+    - error
+
+
+  no-array-constructor:
+    - error
+
+  # Generally prevents errors + rule can be disabled locally when required
+  no-bitwise:
+    - error
+
+  # Don't see why this is regarded as problematic
+  no-continue:
+    - off
+
+  # Leads to complexer to overlook code
+  no-inline-comments:
+    - error
+
+  # Might be used to improve code for human logic
+  no-lonely-if:
+    - off
+
+  no-multiple-empty-lines:
+    - error
+    - max: 4
+      maxEOF: 1
+      maxBOF: 0
+
+  # Can help, but also can make code more complex/unnaturally structured
+  no-negated-condition:
+    - off
+
+  no-nested-ternary:
+    - error
+
+  no-new-object:
+    - error
+
+  # Seems to be a new trend to omit this e.g. in Swift and other modern languages
+  # But is pretty convenient in classic for-loops... therefor we allow it there
+  no-plusplus:
+    - error
+    - allowForLoopAfterthoughts: true
+
+  no-spaced-func:
+    - error
+
+  no-ternary:
+    - off
+
+  # Lead to harder to diff changesets
+  no-trailing-spaces:
+    - error
+
+  no-underscore-dangle:
+    - off
+
+  # Getting people to senior level...
+  no-unneeded-ternary:
+    - error
+
+  no-whitespace-before-property:
+    - error
+
+  object-curly-spacing:
+    - error
+    - always
+
+  one-var:
+    - error
+    - initialized: never
