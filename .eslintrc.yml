@@ -477,10 +477,9 @@ rules:
     - after: true
       before: false
 
+  # Variables and Imports should be sorted in semantic groups not by name
   sort-imports:
-    - error
-
-  # Variables should be sorted in semantic groups not by name
+    - off
   sort-vars:
     - off
 
