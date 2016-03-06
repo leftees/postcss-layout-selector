@@ -24,9 +24,13 @@ rules:
   quotes:
     - error
     - double
+    - avoid-escape
+
+  # Keeping semicolons only for the "return" edge case seems a little to historic for my taste
   semi:
     - error
     - never
+
   no-extra-parens:
     - off
 
@@ -436,3 +440,72 @@ rules:
   one-var:
     - error
     - initialized: never
+
+  one-var-declaration-per-line:
+    - error
+    - initializations
+
+  operator-assignment:
+    - off
+
+  operator-linebreak:
+    - error
+    - after
+
+  # Not needed with Alman style. Interestingly deals with the same issue in a different way.
+  padded-blocks:
+    - error
+    - never
+
+  # That's a neat little setting for keeping code readable
+  quote-props:
+    - error
+    - consistent-as-needed
+
+  semi-spacing:
+    - error
+    - after: true
+      before: false
+
+  sort-imports:
+    - error
+
+  # Variables should be sorted in semantic groups not by name
+  sort-vars:
+    - off
+
+  # Keeping things readable
+  space-before-blocks:
+    - error
+    - always
+
+  # Parens belong to the function... a spacing could break easy grasping of the code
+  space-before-function-paren:
+    - error
+    - never
+
+  space-in-parens:
+    - error
+    - never
+
+  space-infix-ops:
+    - error
+
+  space-unary-ops:
+    - error
+    - words: true
+      nonwords: false
+
+  spaced-comment:
+    - error
+    - always
+
+  # I like the improved readability when using parens
+  wrap-regex:
+    - error
+
+
+
+  #################################################################
+  # ES6+
+  #################################################################
