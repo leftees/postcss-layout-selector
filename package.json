@@ -30,6 +30,8 @@
   },
   "scripts": {
     "test": "ava && eslint *.js src/*.js",
+    "lint": "eslint *.js src/*.js",
+    "autofix": "eslint --fix *.js src/*.js",
     "prepublish": "babel --source-maps true --out-dir ./lib/ ./src/",
     "release": "release-it --github.release --npm.publish",
     "depupdate": "updtr"
