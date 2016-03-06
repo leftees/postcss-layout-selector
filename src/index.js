@@ -3,9 +3,10 @@ import postcss from "postcss"
 function nodesToOptions(rule)
 {
   var options = {}
+
   if (rule.nodes)
   {
-    rule.nodes.forEach(function(child) {
+    rule.nodes.forEach((child) => {
       options[child.prop] = child.value
     })
   }
@@ -13,10 +14,8 @@ function nodesToOptions(rule)
   return options
 }
 
-export default postcss.plugin("postcss-layout-selector", function(pluginOptions)
+export default postcss.plugin("postcss-layout-selector", (pluginOptions) =>
 {
-  pluginOptions = pluginOptions || {}
-
   var currentLayout = pluginOptions.layout
 
   function convert(origin, name, options)
@@ -35,7 +34,7 @@ export default postcss.plugin("postcss-layout-selector", function(pluginOptions)
 
   return function(css)
   {
-    css.walkAtRules("layout", function(rule)
+    css.walkAtRules("layout", (rule) =>
     {
       var params = postcss.list.space(rule.params)
       var options = nodesToOptions(rule)
