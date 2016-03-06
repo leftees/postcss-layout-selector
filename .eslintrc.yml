@@ -59,7 +59,7 @@ rules:
   # more compact braces in Altman style which does not actually worked well together.
   curly:
     - error
-    - multi-line
+    - multi
   dot-location:
     - error
     - object
@@ -135,6 +135,7 @@ rules:
   # Good style
   no-magic-numbers:
     - error
+    - ignoreArrayIndexes: true
 
   # Useless formatting with high maintenance
   no-multi-spaces:
