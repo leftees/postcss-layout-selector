@@ -1,4 +1,4 @@
-<img src="postcss.png" alt="PostCSS Logo" width="200" height="200"/>
+<img src="assets/postcss.png" alt="PostCSS Logo" width="200" height="200"/>
 
 # PostCSS Layout Selector <br/>![Downloads][npm-version-img] ![Downloads][npm-downloads-img] [![Build Status][ci-img]][ci] ![Dependencies][deps-img] [![Code Climate][climate-img]][climate]
 
@@ -61,7 +61,7 @@ See [PostCSS] docs for examples for your environment.
 
 ## Copyright
 
-<img style="border-radius:20px" src="sebastiansoftware.png" alt="Sebastian Software GmbH Logo" width="250" height="200"/>
+<img src="assets/sebastiansoftware.png" alt="Sebastian Software GmbH Logo" width="250" height="200"/>
 
-2015-2016 [Sebastian Software GmbH](http://www.sebastian-software.de)
+Copyright 2015-2016<br/>[Sebastian Software GmbH](http://www.sebastian-software.de)
 
