@@ -1,35 +1,15 @@
 import postcss from "postcss"
 
-function nodesToOptions(rule)
-{
-  var options = {}
-
-  if (rule.nodes)
-  {
-    rule.nodes.forEach((child) => {
-      options[child.prop] = child.value
-    })
-  }
-
-  return options
-}
-
-export default postcss.plugin("postcss-layout-selector", (pluginOptions) =>
+export default postcss.plugin("postcss-layout-selector", (pluginOptions = {}) =>
 {
   var currentLayout = pluginOptions.layout
 
-  function convert(origin, name, options)
+  function convert(origin, name)
   {
-    options = options || {}
-
     if (name === currentLayout)
-    {
       origin.replaceWith(origin.nodes)
-    }
     else
-    {
       origin.remove()
-    }
   }
 
   return function(css)
@@ -37,9 +17,8 @@ export default postcss.plugin("postcss-layout-selector", (pluginOptions) =>
     css.walkAtRules("layout", (rule) =>
     {
       var params = postcss.list.space(rule.params)
-      var options = nodesToOptions(rule)
 
-      convert(rule, params[0], options)
+      convert(rule, params[0])
     })
   }
 })
