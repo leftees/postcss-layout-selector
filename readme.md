@@ -1,4 +1,4 @@
-![PostCSS](postcss.svg)
+![PostCSS](assets/postcss.svg)
 
 # PostCSS Layout Selector <br/>![Downloads][npm-version-img] ![Downloads][npm-downloads-img] [![Build Status][ci-img]][ci] ![Dependencies][deps-img] [![Code Climate][climate-img]][climate]
 
