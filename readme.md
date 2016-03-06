@@ -61,7 +61,7 @@ See [PostCSS] docs for examples for your environment.
 
 ## Copyright
 
-<img src="/sebastian-software/postcss-layout-selector/raw/master/sebastiansoftware.png" alt="Sebastian Software GmbH Logo" width="300" height="200"/>
+<img style="border-radius:20px" src="/sebastian-software/postcss-layout-selector/raw/master/sebastiansoftware.png" alt="Sebastian Software GmbH Logo" width="300" height="200"/>
 
 2015-2016 [Sebastian Software GmbH](http://www.sebastian-software.de)
 
