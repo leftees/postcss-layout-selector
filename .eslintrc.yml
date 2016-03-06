@@ -416,6 +416,13 @@ rules:
     - error
     - allowForLoopAfterthoughts: true
 
+  no-restricted-syntax:
+    - error
+    - WithStatement
+    - DebuggerStatement
+    - LabeledStatement
+    - YieldExpression
+
   no-spaced-func:
     - error
 
