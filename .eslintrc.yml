@@ -518,3 +518,43 @@ rules:
   #################################################################
   # ES6+
   #################################################################
+
+  # Call me old fashioned
+  arrow-body-style:
+    - error
+    - always
+  arrow-parens:
+    - error
+    - always
+
+  arrow-spacing:
+    - error
+
+  constructor-super:
+    - error
+
+  # The star is no operator but a modifier of the function
+  generator-star-spacing:
+    - error
+    - before
+
+  no-class-assign:
+    - error
+
+  no-const-assign:
+    - error
+
+  no-dupe-class-members:
+    - error
+
+  # Trying to start new code the modern way
+  prefer-arrow-callback:
+    - warn
+  prefer-const:
+    - warn
+  prefer-rest-params:
+    - warn
+  prefer-spread:
+    - warn
+  prefer-template:
+    - warn
