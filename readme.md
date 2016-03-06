@@ -1,4 +1,4 @@
-![PostCSS](assets/postcss.svg)
+![PostCSS](postcss.png)
 
 # PostCSS Layout Selector <br/>![Downloads][npm-version-img] ![Downloads][npm-downloads-img] [![Build Status][ci-img]][ci] ![Dependencies][deps-img] [![Code Climate][climate-img]][climate]
 
@@ -60,6 +60,8 @@ See [PostCSS] docs for examples for your environment.
 
 
 ## Copyright
+
+![Sebastian Software GmbH](sebastiansoftware.png)
 
 2015-2016 [Sebastian Software GmbH](http://www.sebastian-software.de)
 
