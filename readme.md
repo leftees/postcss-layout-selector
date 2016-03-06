@@ -1,3 +1,5 @@
+![PostCSS](postcss.svg)
+
 # PostCSS Layout Selector <br/>![Downloads][npm-version-img] ![Downloads][npm-downloads-img] [![Build Status][ci-img]][ci] ![Dependencies][deps-img] [![Code Climate][climate-img]][climate]
 
 [PostCSS] plugin for easy handling of different layouts without media queries but with conditional compilation.
