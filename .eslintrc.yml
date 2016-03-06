@@ -353,7 +353,7 @@ rules:
 
   max-params:
     - error
-    - 2
+    - 3
 
   max-statements:
     - error
