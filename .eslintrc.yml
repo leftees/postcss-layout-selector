@@ -313,4 +313,42 @@ rules:
       afterColon: true
       mode: strict
 
+  keyword-spacing:
+    - error
 
+  lines-around-comment:
+    - warn
+    - beforeBlockComment: true
+      afterBlockComment: false
+      beforeLineComment: true
+      afterLineComment: false
+      allowBlockStart: true
+      allowBlockEnd: false
+      allowObjectStart: true
+      allowObjectEnd: false
+      allowArrayStart: true
+      allowArrayEnd: false
+
+  max-depth:
+    - warn
+    - maximum: 3
+
+  max-len:
+    - warn
+    - code: 140
+      comments: 160
+      ignoreUrls: true
+      tabWidth: 2
+
+  max-nested-callbacks:
+    - error
+    - 2
+
+  max-params:
+    - error
+    - 2
+
+  max-statements:
+    - error
+    - 10
+    - ignoreTopLevelFunctions: true

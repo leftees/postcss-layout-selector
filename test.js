@@ -1,5 +1,6 @@
 /* eslint no-magic-numbers: 0 */
 /* eslint id-length: 0 */
+/* eslint max-params: 0 */
 
 import test from "ava"
 import "babel-register"
