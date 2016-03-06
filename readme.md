@@ -10,6 +10,7 @@
 [deps-img]: https://david-dm.org/sebastian-software/postcss-layout-selector.svg
 [climate-img]: https://codeclimate.com/github/sebastian-software/postcss-layout-selector/badges/gpa.svg
 [climate]: https://codeclimate.com/github/sebastian-software/postcss-layout-selector
+[npm]: https://www.npmjs.com/package/postcss-layout-selector
 [npm-downloads-img]: https://img.shields.io/npm/dm/postcss-layout-selector.svg
 [npm-version-img]: https://img.shields.io/npm/v/postcss-layout-selector.svg
 
@@ -45,8 +46,17 @@ header {
 }
 ```
 
+## Installation
+
+Should be installed locally in your project source code:
+
+```bash
+npm install postcss-layout-selector --save-dev
+```
 
 ## Usage
+
+Integrate like this in your e.g. `gulpfile.js`:
 
 ```js
 postcss([
