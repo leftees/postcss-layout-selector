@@ -548,10 +548,8 @@ rules:
   no-dupe-class-members:
     - error
 
-  # Trying to start new code the modern way
+  # Trying to start new code the modern way - at least for what it makes sense
   prefer-arrow-callback:
-    - warn
-  prefer-const:
     - warn
   prefer-rest-params:
     - warn
