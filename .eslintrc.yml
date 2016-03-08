@@ -58,7 +58,7 @@ rules:
   # New for me: allow curly-free one liners. This might help with my tendency to write
   # more compact braces in Altman style which does not actually worked well together.
   curly:
-    - error
+    - warn
     - multi
   dot-location:
     - error
@@ -136,6 +136,7 @@ rules:
   no-magic-numbers:
     - error
     - ignoreArrayIndexes: true
+      ignore: [ 0, 1, 2, 10 ]
 
   # Useless formatting with high maintenance
   no-multi-spaces:
@@ -414,7 +415,7 @@ rules:
   # Seems to be a new trend to omit this e.g. in Swift and other modern languages
   # But is pretty convenient in classic for-loops... therefor we allow it there
   no-plusplus:
-    - error
+    - warn
     - allowForLoopAfterthoughts: true
 
   no-restricted-syntax:
