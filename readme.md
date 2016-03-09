@@ -46,6 +46,13 @@ header {
 }
 ```
 
+
+## Links
+
+- [GitHub](https://github.com/sebastian-software/postcss-layout-selector)
+- [NPM](https://www.npmjs.com/package/postcss-layout-selector)
+
+
 ## Installation
 
 Should be installed locally in your project source code:
@@ -53,6 +60,7 @@ Should be installed locally in your project source code:
 ```bash
 npm install postcss-layout-selector --save-dev
 ```
+
 
 ## Usage
 
