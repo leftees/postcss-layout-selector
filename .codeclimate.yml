@@ -1,6 +1,9 @@
 engines:
   eslint:
     enabled: true
+    config:
+      extentions:
+      - .es6
 
 ratings:
    paths:
