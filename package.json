@@ -30,11 +30,16 @@
     "updtr": "^0.1.7"
   },
   "scripts": {
-    "test": "ava && eslint *.js src/*.js",
     "lint": "eslint --cache *.js src/*.js",
     "autofix": "eslint --cache --fix *.js src/*.js",
-    "prepublish": "babel --source-maps true --out-dir ./lib/ ./src/",
-    "release": "release-it --github.release --npm.publish",
+    "build": "babel --source-maps true --out-dir ./lib/ ./src/",
+    "prepublish": "npm run build",
+    "pretest": "npm run build",
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "release": "release-it --github.release --npm.publish --non-interactive",
+    "release-minor": "release-it --github.release --npm.publish --non-interactive --increment minor",
+    "release-major": "release-it --github.release --npm.publish --non-interactive --increment major",
     "depupdate": "updtr"
   },
   "ava": {
