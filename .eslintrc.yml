@@ -1,2 +1,1 @@
-extends:
-  "./node_modules/s15e-javascript/.eslintrc.yml"
+
